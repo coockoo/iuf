@@ -1,9 +1,7 @@
 const createDoIn = (handler) => {
   const doIn = (obj, path, value) => {
     if (!path.length) {
-      console.log('obj', obj, value, typeof obj);
       const res = handler(obj, value);
-      console.log('RES', res, typeof res);
       return res;
     }
     const [key, ...restPath] = path;
@@ -22,11 +20,8 @@ const createDoIn = (handler) => {
         return item;
       });
     }
-    console.log('tst', key, restPath, obj, obj[key], value);
     // TODO: Fix array conversion into an object probably here. hm hm
     // TODO: Add tests
-    // TODO: Finish readme
-    // TODO: Remove debug lines
     // TODO: Add linter
     return Object.assign({}, obj, {
       [key]: doIn(obj[key], restPath, value)

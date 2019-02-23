@@ -1,5 +1,5 @@
 {
-  "name": "imu",
+  "name": "iuf",
   "version": "1.0.0",
   "description": "Immutable update patters functions",
   "main": "src/index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/coockoo/imu.git"
+    "url": "git+ssh://git@github.com/coockoo/iuf.git"
   },
   "keywords": [
     "immutable",
@@ -21,7 +21,7 @@
   "author": "Oleksandr Bondarchuk <alex.coockoo@gmail.com> (https://github.com/coockoo)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coockoo/imu/issues"
+    "url": "https://github.com/coockoo/iuf/issues"
   },
-  "homepage": "https://github.com/coockoo/imu#readme"
+  "homepage": "https://github.com/coockoo/iuf#readme"
 }
