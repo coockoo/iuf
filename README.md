@@ -2,9 +2,11 @@
 
 Always return a **new object** with updated properties in some way.
 
-```
+```bash
 npm i iuf
+```
 
+```javascript
 import * as iuf from 'iuf';
 const iuf = require('iuf');
 ```
@@ -29,7 +31,7 @@ console.log(obj, newObj, obj !== newObj);
 - [setIn](#set-in)
 - [sliceIn](#slice-in)
 - [toggleIn](#toggle-in)
-- [updateInWith](#updateInWith-in)
+- [updateInWith](#update-in-with)
 
 
 ### <a name="merge-in"></a>mergeIn
