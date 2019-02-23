@@ -1,0 +1,27 @@
+{
+  "name": "imu",
+  "version": "1.0.0",
+  "description": "Immutable update patters functions",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/coockoo/imu.git"
+  },
+  "keywords": [
+    "immutable",
+    "update",
+    "functions",
+    "state-tree",
+    "immutables",
+    "object"
+  ],
+  "author": "Oleksandr Bondarchuk <alex.coockoo@gmail.com> (https://github.com/coockoo)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coockoo/imu/issues"
+  },
+  "homepage": "https://github.com/coockoo/imu#readme"
+}
