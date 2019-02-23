@@ -20,9 +20,6 @@ const createDoIn = (handler) => {
         return item;
       });
     }
-    // TODO: Fix array conversion into an object probably here. hm hm
-    // TODO: Add tests
-    // TODO: Add linter
     return Object.assign({}, obj, {
       [key]: doIn(obj[key], restPath, value)
     });

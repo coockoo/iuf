@@ -97,6 +97,12 @@ const newObj = iuf.updateInWith(obj, ['a', 'b', 'c'], doUpdate);
 // => { a: { b: { c: 5 }, b1: 20 }, a1: 'x' }
 ```
 
+## Roadmap
+
+- [ ] Fix array conversion into an object.
+- [ ] Add linter
+- [ ] What to do with non-existant properties and paths iuf.updateIn({ a: { b: 10 } }, ['c', 'd'], 10)?
+
 ## License
 
 MIT
