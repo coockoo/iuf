@@ -20,8 +20,9 @@ const createDoIn = (handler) => {
         return item;
       });
     }
+    const objValue = obj ? obj[key] : {};
     return Object.assign({}, obj, {
-      [key]: doIn(obj[key], restPath, value)
+      [key]: doIn(objValue, restPath, value)
     });
   };
   return doIn;
