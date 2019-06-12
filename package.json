@@ -1,6 +1,6 @@
 {
   "name": "iuf",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Immutable update patters functions",
   "main": "src/index.js",
   "scripts": {
