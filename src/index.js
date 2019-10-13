@@ -28,6 +28,7 @@ const createDoIn = (handler) => {
   return doIn;
 };
 
+const filterIn = createDoIn((obj, fn) => obj.filter(fn));
 const mergeIn = createDoIn((obj, value) => Object.assign({}, obj, value));
 const pushIn = createDoIn((obj, value) => [...obj, value]);
 const setIn = createDoIn((obj, value) => value);
@@ -36,6 +37,7 @@ const toggleIn = createDoIn((obj) => !obj);
 const updateInWith = createDoIn((obj, fn) => fn(obj));
 
 module.exports = {
+  filterIn,
   mergeIn,
   pushIn,
   setIn,

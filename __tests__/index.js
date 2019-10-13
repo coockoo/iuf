@@ -59,3 +59,12 @@ test('creates non-existant path for setIn', () => {
   expect(newObj.c.d).toEqual(16);
   expect(newObj).not.toBe(obj);
 });
+
+test('does valid filterIn', () => {
+  const obj = { a: { b: [{ k: 1 }, { k: -1 }, { k: 0 }] }, c: 'x' };
+  const newObj = iuf.filterIn(obj, ['a', 'b'], (e) => e.k > 0);
+  expect(newObj.a.b).toHaveLength(1);
+  expect(newObj.a.b).toHaveProperty('0.k', obj.a.b[0].k);
+  expect(newObj).toHaveProperty('c', obj.c);
+  expect(newObj).not.toBe(obj);
+});

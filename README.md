@@ -26,6 +26,7 @@ console.log(obj, newObj, obj !== newObj);
 
 ### Functions
 
+- [filterIn](#filter-in)
 - [mergeIn](#merge-in)
 - [pushIn](#push-in)
 - [setIn](#set-in)
@@ -33,6 +34,16 @@ console.log(obj, newObj, obj !== newObj);
 - [toggleIn](#toggle-in)
 - [updateInWith](#update-in-with)
 
+
+### <a name="filter-in"></a>filterIn
+
+Filter collection of items using callback function
+
+```javascript
+const obj = { a: { b: [{ k: 1 }, { k: -1 }, { k: 0 }] }, c: 'x' };
+const newObj = iuf.filterIn(obj, ['a', 'b'], (e) => e.k > 0);
+// => { a: { b: [{ k: 1 }] }, c: 'x' };
+```
 
 ### <a name="merge-in"></a>mergeIn
 
@@ -102,6 +113,7 @@ const newObj = iuf.updateInWith(obj, ['a', 'b', 'c'], doUpdate);
 - [ ] Fix array conversion into an object.
 - [ ] Add linter
 - [ ] What to do with non-existant properties and paths iuf.updateIn({ a: { b: 10 } }, ['c', 'd'], 10)?
+- [ ] Add withoutIn
 
 ## License
 
