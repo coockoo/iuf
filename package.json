@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/coockoo/iuf#readme",
   "devDependencies": {
-    "jest": "^24.1.0"
+    "jest": "^24.9.0"
   }
 }
